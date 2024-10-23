@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #333333; /* Darkish color matching the theme */
+    position: relative;
+    color: #fff;
+}
+
+/* Restaurant Info - Left Side */
+.restaurant-info {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-image {
+    width: 150px; /* Slightly smaller size */
+    height: 150px;
+    border-radius: 50%; /* Circular frame */
+    object-fit: cover;
+    margin-right: 20px;
+    border: 5px solid #fff; /* White border around the circle */
+}
+
+.restaurant-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #fff; /* White text to contrast the darker background */
+}
+
+/* Navbar - Right Side */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.navbar a {
+    color: #fff; /* White color for better visibility */
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+}
+
+/* Menu Title */
+.menu-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px 0;
+    font-family: 'Pacifico', cursive;
+    color: #333; /* Dark text for menu title */
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.food-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.food-item h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.food-item p {
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.food-item button {
+   background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.food-item button:hover {
+    background-color: #ffcc00;
+}
