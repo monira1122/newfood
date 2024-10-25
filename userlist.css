@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsla(171, 8%, 32%, 0.506);
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.new-user-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-user-btn:hover {
+    background-color: #ffdb4d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+.action-btn-group {
+    display: inline-block;
+}
+
+.action-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #ffdb4d;
+}
