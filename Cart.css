@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,44 +6,73 @@
 }
 
 body {
-    font-family: 'Pacifico', cursive;
-    background-image: url('img/indeximg4.jpg'); /* Replace this with your actual background image */
+    font-family: Arial, sans-serif;
+    background-image: url('img/indeximg4.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     color: #333;
 }
 
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: transparent;
+    padding: 20px 40px;
     color: #fff;
 }
 
 .header .site-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.header .nav {
+    display: flex;
+    gap: 20px;
 }
 
 .header .nav a {
-    margin: 0 10px;
     color: #fff;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-weight: bold;
+    font-size: 16px;
 }
 
+.header .nav a:hover {
+    color: #ffcc00;
+}
+
+/* Small confirmation box styling */
+.confirmation-box {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Cart title styling */
 .cart-title {
     font-size: 36px;
     text-align: center;
-    margin: 40px 0 20px; /* Adjusted margin for spacing */
+    margin: 20px 0;
     color: #fff;
 }
 
+/* Cart section styling */
 .cart-section {
-    padding: 40px 20px; /* Adjusted padding for spacing */
-    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
     max-width: 1000px;
     border-radius: 8px;
@@ -54,6 +84,7 @@ body {
     align-items: flex-start;
 }
 
+/* Cart items styling */
 .cart-items {
     width: 60%;
     background: #fff;
@@ -67,6 +98,20 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.delete-btn:hover {
+    color: darkred;
 }
 
 .cart-item .item-image {
@@ -87,7 +132,6 @@ body {
 
 .item-details p {
     margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .qty-section {
@@ -98,26 +142,33 @@ body {
 
 .qty-section label {
     font-weight: bold;
+}
+
+.qty-btn {
     font-size: 1rem;
-    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background-color: #e0e0e0;
 }
 
 .qty-section input[type="number"] {
     width: 50px;
     text-align: center;
-    padding: 5px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
 }
-
 
 .item-total {
     font-size: 18px;
     font-weight: bold;
 }
 
+/* Total summary styling */
 .total-summary {
     width: 35%;
     background: #fff;
@@ -130,26 +181,24 @@ body {
 .total-summary h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    font-family: 'Pacifico', cursive;
 }
 
 .total-summary p {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: 'Pacifico', cursive;
 }
 
 .checkout-button {
     background: #ffcc00;
-    color:black;
+    color: black;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: transform 0.3s;
-    font-family: 'Pacifico', cursive;
+    font-weight: bold;
 }
 
 .checkout-button:hover {
